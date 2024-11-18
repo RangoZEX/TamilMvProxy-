@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="sucess" id="sucess">
+  <span class='material-symbols-outlined'>inventory</span>
+  <span>Code Copied Sucessfully</span>
+</div>
+<div class="copy">
+  <div class="copyheader">
+      <h1 class="copy">Authorization code</h1>
+  </div>
+  <div class="content">
+      <p class="copytext">Copy the code and past in the bot</p>
+      <input type="text" value="{{ code }}" id="myInput">
+      <div class="tooltip">
+      <button class="copy" onclick="myFunction()" onmouseout="outFunc()">
+           Copy Code
+      </button>
+      </div>
+  </div>
+</div>
+<script>
+  function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  
+  var sucess = document.getElementById("sucess");
+  sucess.style.visibility = 'visible';
+  }
+  
+  function outFunc() {
+  var sucess = document.getElementById("sucess");
+  sucess.style.visibility = 'hidden';
+
+  }
+</script>
+{% endblock content %}

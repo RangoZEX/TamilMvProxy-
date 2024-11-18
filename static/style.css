@@ -1,0 +1,168 @@
+*{
+  margin: 0px;
+  padding: 0px
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+html {
+  background-image:linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(./image/background.jpg);
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+  width: 100%
+}
+
+h1 {
+  color: tomato;
+  font-style:Serif;
+  font-size: 22px;
+  text-align: center;
+}
+
+h2 {
+  color:rgb(158, 6, 133);
+  font-family: 'Trispace', sans-serif;
+  font-size: 20px;
+}
+
+h3 {
+  color:gray;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+p {
+  color:white;
+  border-radius: 18px;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+div.copy {
+  text-align:center;
+  /* align-items: center; */
+  display: block;
+  margin:auto;
+  margin-top: 10px;
+  background-image: linear-gradient(aqua, rgb(247, 139, 211));
+  background-color: white;
+  height:300px;
+  width:300px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+h1.copy {
+  color: black;
+  border-bottom: 2px solid grey;
+  width: 100%;
+  padding: 1vh 1vw;
+  font-size: 20px;
+}
+
+.content{
+  width: 100%;
+  height:auto;
+}
+
+#myInput {
+  color:black;
+  padding:0%;
+  text-align: left;
+  margin-top: 15px;
+  height: 50px;
+  font-size: 18px;
+}
+
+button.copy{
+  margin-top: 50px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius:90px;
+  color: orangered;
+  background-color: aquamarine;
+  border: none;
+}
+
+button.copy:hover {
+  background-color: aqua;
+}
+
+p.copytext{
+  color: black;
+  font-size: 16px;
+}
+
+div.sucess{
+  height: 30px;
+  width: 200px;
+  margin:auto;
+  margin-top: 100px;
+  background-color: rgb(210, 248, 188);
+  overflow:visible;
+  display:inline-flexbox;
+  color: green;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+footer {
+  font-size: large;
+  background: black;
+  display: block;
+  font-style: "Cursive";
+  text-align: center;
+  padding: 25px;
+}
+.tg-icon {
+  color:  rgb(4, 76, 112);
+  padding-right: 20px;
+}
+.tg-icon:hover {
+  opacity: 1;
+  color:  rgb(0, 136, 204);
+}
+.git-icon {
+  padding-right: 20px;
+  color:#999
+}
+.git-icon:hover {
+  color:#fff
+}
+.mail-icon {
+  padding-right: 20px;
+  color:rgb(104, 7, 7)
+}
+.mail-icon:hover {
+  color:rgb(243, 13, 13)
+}
+button.policy {
+  display: inline-block;
+  padding: 15px 25px; 
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button.policy:hover {background-color: #3e8e41}
+
+button.policy:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

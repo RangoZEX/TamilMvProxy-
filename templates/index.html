@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1> AMC Dev</h1>
+        <center>
+            <img src="../static/image/logo.png" alt="logo" width="50">
+            <p>
+            <bold>Bot Name:</bold> AMC DriveBot<br>
+            <bold>Username:</bold> <a href="https://telegram.dog/AMCGdriveBot">@AMCGdriveBot</a>
+            </p>
+        </center>
+        <h2>How this app uses the data using OAuth?</h2>
+            <p>This is a Telegram bot that let users connect their account to the Bot. <br>
+            This bot basically helps the users to manage there google drive account through a telegram bot.
+            It simplifies the work of user in uploading files through a direct link and also helps in managing there accounts.
+            The client id and client secret will generate a authentication url and sent to users via a telegram bot message.
+            The authentication url is given in Telegram bot itself only when user requests.
+            The user visit the auth link and login using their gmail account and sends back the success code.
+            Then the access token is generated for the user.
+            Bot saves the access token in a secure mongo database for later use for the user.<br>
+             we also provide a /logout command in our bot which helps the user to logout from there account when ever the want and we delete there information from our database when the use logout commad.<br><br>
+        
+            <i> <strong> Note:</strong> Access token is used only when user send any request to the bot and it cannot be misused</i>
+        <h2>How this app enhances user functionality?</h2>
+            <p>Users need an easy client to upload their files to there drive 
+            links to upload to Google Drive. Downloading files is sometimes slow. Then it will be very easy if there is an app that downloads the files for them and upload to their Google Drive.
+            Google Drive can give high speed downloads, so users always prefers to upload files to Google Drive using url and download from it.
+            This app just make their work easy by just sending their direct link to Telegram bot and uploading it to their drive.it will be there in the drive and whenever they want they can Download at high speed.</p>
+ 
+        <button class="policy" onclick="document.location='privacy-policy'">Privacy Policy</button>
+        </p>
+{% endblock content %}
